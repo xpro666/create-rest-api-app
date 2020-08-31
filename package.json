@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "create-rest-api-app": "node tasks/craa.js"
+  },
+  "devDependencies": {},
+  "lint-staged": {
+    "*.{js,md}": [
+      "prettier --trailing-comma es5 --single-quote --write"
+    ]
+  },
+  "dependencies": {
+    "merge": "^1.2.1"
+  }
+}
