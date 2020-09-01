@@ -1,6 +1,6 @@
 {
   "name": "create-rest-api-app",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "keywords": [
     "rest api",
     "koa"

@@ -112,7 +112,7 @@ function init() {
       console.log(`    A custom ${chalk.cyan('--template')} can be one of:`);
       console.log(
         `      - a custom template published on npm: ${chalk.green(
-          'cra-template-typescript'
+          'craa-template-oracledb-helper'
         )}`
       );
       console.log(
@@ -636,7 +636,7 @@ function getInstallPackage(version, originalDirectory) {
 }
 
 function getTemplateInstallPackage(template, originalDirectory) {
-  let templateToInstall = 'cra-template';
+  let templateToInstall = 'craa-template';
   if (template) {
     if (template.match(/^file:/)) {
       templateToInstall = `file:${path.resolve(
@@ -662,16 +662,16 @@ function getTemplateInstallPackage(template, originalDirectory) {
         templateName.startsWith(`${templateToInstall}-`)
       ) {
         // Covers:
-        // - cra-template
-        // - @SCOPE/cra-template
-        // - cra-template-NAME
-        // - @SCOPE/cra-template-NAME
+        // - craa-template
+        // - @SCOPE/craa-template
+        // - craa-template-NAME
+        // - @SCOPE/craa-template-NAME
         templateToInstall = `${scope}${templateName}${version}`;
       } else if (version && !scope && !templateName) {
         // Covers using @SCOPE only
         templateToInstall = `${version}/${templateToInstall}`;
       } else {
-        // Covers templates without the `cra-template` prefix:
+        // Covers templates without the `craa-template` prefix:
         // - NAME
         // - @SCOPE/NAME
         templateToInstall = `${scope}${templateToInstall}-${templateName}${version}`;
