@@ -337,8 +337,8 @@ function createApp(name, verbose, version, template, useNpm, usePnp) {
     }
   }
 
-  version = 'file:D:\\projects\\DoingsoftInc\\create-rest-api-app\\packages\\rest-api-scripts';
-  template = 'file:D:\\projects\\DoingsoftInc\\create-rest-api-app\\packages\\craa-template';
+  // version = 'file:D:\\projects\\DoingsoftInc\\create-rest-api-app\\packages\\rest-api-scripts';
+  // template = 'file:D:\\projects\\DoingsoftInc\\create-rest-api-app\\packages\\craa-template';
 
   run(
     root,

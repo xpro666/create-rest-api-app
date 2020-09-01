@@ -9,7 +9,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Execute GET request to [http://localhost:8080/versions](http://localhost:8080/versions) to view your Rest API project version.
+Execute GET request to [http://localhost:9000/versions](http://localhost:8080/versions) to view your Rest API project version.
 
 The process will reload if you make edits.
 

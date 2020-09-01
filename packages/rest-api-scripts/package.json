@@ -1,6 +1,6 @@
 {
   "name": "rest-api-scripts",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Scripts for Create Rest API App.",
   "bin": {
     "rest-api-scripts": "./bin/rest-api-scripts.js"
