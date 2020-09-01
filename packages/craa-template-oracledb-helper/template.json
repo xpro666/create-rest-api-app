@@ -1,0 +1,10 @@
+{
+  "package": {
+    "dependencies": {
+      "oracledb-helper": ">=1.0.2",
+      "merge": "^1.2.0"
+    },
+    "devDependencies": {
+    }
+  }
+}

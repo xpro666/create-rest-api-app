@@ -650,7 +650,7 @@ function getTemplateInstallPackage(template, originalDirectory) {
       // for tar.gz or alternative paths
       templateToInstall = template;
     } else {
-      // Add prefix 'cra-template-' to non-prefixed templates, leaving any
+      // Add prefix 'craa-template-' to non-prefixed templates, leaving any
       // @scope/ and @version intact.
       const packageMatch = template.match(/^(@[^/]+\/)?([^@]+)?(@.+)?$/);
       const scope = packageMatch[1] || '';
