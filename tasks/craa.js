@@ -96,7 +96,7 @@ Object.keys(packagePathsByName).forEach(name => {
 console.log('Replaced all local dependencies for testing.');
 console.log('Do not edit any package.json while this task is running.');
 
-// Finally, pack react-scripts.
+// Finally, pack rest-api-scripts.
 // Don't redirect stdio as we want to capture the output that will be returned
 // from execSync(). In this case it will be the .tgz filename.
 const scriptsFileName = cp

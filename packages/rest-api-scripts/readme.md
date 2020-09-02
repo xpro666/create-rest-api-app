@@ -1,8 +1,6 @@
-# craa-template
+# rest-api-scripts
 
-This is the official base template for [Create Rest API App](https://git.orl.ueshka/tusove/create-rest-api-app).
-
-If you don't specify a template (for example, `--template oracledb-helper`), this template will be used by default.
+This package includes scripts and configuration used by [Create Rest API App](https://git.orl.ueshka/tusove/create-rest-api-app).
 
 For more information, please refer to:
 

@@ -59,7 +59,7 @@ function tryGitInit() {
 function tryGitCommit(appPath) {
   try {
     execSync('git add -A', { stdio: 'ignore' });
-    execSync('git commit -m "Initialize project using Create React App"', {
+    execSync('git commit -m "Initialize project using Create Rest API App"', {
       stdio: 'ignore',
     });
     return true;
@@ -357,8 +357,8 @@ module.exports = function (
     );
   }
 
-  // Install react and react-dom for backward compatibility with old CRA cli
-  // which doesn't install react and react-dom along with react-scripts
+  // Install koa and koa-router for backward compatibility with old CRA cli
+  // which doesn't install koa and koa-router along with rest-api-scripts
   if (!isKoaInstalled(appPackage)) {
     args = args.concat(['koa', 'koa-router']);
   }

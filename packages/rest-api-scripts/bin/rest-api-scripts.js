@@ -54,7 +54,7 @@ if (commands.includes(script)) {
   process.exit(result.status);
 } else {
   console.log('Unknown script "' + script + '".');
-  console.log('Perhaps you need to update react-scripts?');
+  console.log('Perhaps you need to update rest-api-scripts?');
   console.log(
     'See: https://git.orl.ueshka/tusove/create-rest-api-app/docs/updating-to-new-releases'
   );

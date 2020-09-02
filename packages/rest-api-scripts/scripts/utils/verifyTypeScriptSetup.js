@@ -1,6 +1,6 @@
 // @remove-file-on-eject
 /**
- * Copyright (c) 2015-present, Facebook, Inc.
+ * Copyright (c) 2020-present, Evgeniy Tusov.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -131,10 +131,7 @@ function verifyTypeScriptSetup() {
     resolveJsonModule: { value: true, reason: 'to match webpack loader' },
     isolatedModules: { value: true, reason: 'implementation limitation' },
     noEmit: { value: true },
-    jsx: {
-      parsedValue: ts.JsxEmit.React,
-      suggested: 'react',
-    },
+
     paths: { value: undefined, reason: 'aliased imports are not supported' },
   };
 
@@ -259,11 +256,11 @@ function verifyTypeScriptSetup() {
     writeJson(paths.appTsConfig, appTsConfig);
   }
 
-  // Reference `react-scripts` types
+  // Reference `rest-api-scripts` types
   if (!fs.existsSync(paths.appTypeDeclarations)) {
     fs.writeFileSync(
       paths.appTypeDeclarations,
-      `/// <reference types="react-scripts" />${os.EOL}`
+      `/// <reference types="rest-api-scripts" />${os.EOL}`
     );
   }
 }

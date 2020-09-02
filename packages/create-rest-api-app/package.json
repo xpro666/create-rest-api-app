@@ -1,6 +1,6 @@
 {
   "name": "create-rest-api-app",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "keywords": [
     "rest api",
     "koa"
@@ -24,7 +24,7 @@
     "yarn.lock.cached"
   ],
   "bin": {
-    "create-react-app": "./index.js"
+    "create-rest-api-app": "./index.js"
   },
   "scripts": {
     "test": "cross-env FORCE_COLOR=true jest"

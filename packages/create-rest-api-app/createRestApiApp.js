@@ -51,8 +51,8 @@ const packageJson = require('./package.json');
 
 let projectName;
 
-let dependences = ['koa'].sort();
-const baseTpl = 'file:D:\\projects\\DoingsoftInc\\create-rest-api-app\\packages\\rest-api-base';
+let dependencies = ['koa', 'rest-api-scripts'].sort();
+const baseTpl = 'rest-api-base';
 
 function init() {
   const program = new commander.Command(packageJson.name)
@@ -161,7 +161,7 @@ function init() {
             'Firefox',
             'Safari',
           ],
-          npmPackages: ['koa', 'rest-api-scripts'],
+          npmPackages: dependencies,
           npmGlobalPackages: ['create-rest-api-app'],
         },
         {
@@ -436,9 +436,9 @@ function run(
   Promise.all([
     getInstallPackage(version, originalDirectory),
     getTemplateInstallPackage(template, originalDirectory),
-    getTemplateInstallPackage(baseTpl, originalDirectory),
+    getInstallPackage(baseTpl, originalDirectory),
   ]).then(([packageToInstall, templateToInstall, baseTplToInstall]) => {
-    const allDependencies = dependences.concat([packageToInstall]);
+    const allDependencies = dependencies.concat([packageToInstall]);
 
     console.log('Installing packages. This might take a couple of minutes.');
 
@@ -880,7 +880,6 @@ function checkAppName(appName) {
   }
 
   // TODO: there should be a single place that holds the dependencies
-  const dependencies = ['react', 'react-dom', 'rest-api-scripts'].sort();
   if (dependencies.includes(appName)) {
     console.error(
       chalk.red(
